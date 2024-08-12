@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Carta, Front End developer</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="home" class="container-fluid navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
+                <div class="circle rounded-circle mr-4 bg-dark-red"></div>
+                <h1 class="header-title mb-0">Maria Carta, Front End developer</h1>
+              </a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex"></span>
+                <img class="icon-toggle" width="48" height="48" src="https://img.icons8.com/parakeet-line/48/FFFFFF/delete-sign.png" alt="close-button" title="close-button"/>
+              </button>
+              <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbarNavDropdown">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#chi-sono">chi sono</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./projects.html">progetti</a>
+                  </li>
+                  <li class="nav-item d-md-none d-lg-block">
+                    <a class="nav-link" href="./contacts.html">Contatti</a>
+                  </li>
+                  <li class="nav-item dropdown d-lg-none">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Altro
+                    </a>
+                    <ul class="dropdown-menu text-uppercase">
+                      <li>
+                        <a class="dropdown-item" href="#contatti">Contatti</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="image-banner position-relative" >
+             <picture>
+                <source media="(min-width:650px)" srcset="./assets/img/71CE3EF7-3FEE-4477-B001-1005F8F7E66D_1_102_o.jpeg">
+                <source media="(min-width:465px)" srcset="./assets/img/banner-mobile.jpeg"> 
+                <img src="./assets/img/71CE3EF7-3FEE-4477-B001-1005F8F7E66D_1_102_o.jpeg" alt="random-img" class="img-fluid img-banner w-100" style="width:auto;">
+              </picture>
+            <p class="img-text flex-wrap position-absolute d-flex">Ciao, sono Maria e sono una Front End Developer!</p>
+        </div>
+        <div class="container"> 
+          <section  id="chi-sono" class="info pt-5 text-center">
+            <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
+                <div class="section-break d-flex"></div>
+                <h3 class="my-4 text-uppercase">chi sono</h3>
+            </div>
+            <img src="./assets/img/ritratto.jpg" title="image" alt="image" width="300" class="image-banner img-fluid rounded-circle">
+            <div class="info-description pt-5">
+              Front End developer with 4+ years experience in the industry, knowledge of HTML5, CSS3 and Javascript. Familiar with GIT, Azure DevOps and Agile's methodology SCRUM.
+            </div>
+          </section>
+          <section  id="progetti"class="info pt-5 text-center">
+              <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
+                  <div class="section-break d-flex"></div>
+                  <h3 class="my-4 text-uppercase">progetti</h3>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 position-relative">
+                  <div class="col">
+                    <div class="card">
+                      <div class="frontofcard">
+                        <img src="./assets/img/prog-pomelia.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="backofcard">
+                        <div class="backofcard-item bg-dark-green">
+                          <p>html</p>
+                          <p>css</p>
+                          <p>bootstrap</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Hotel Pomelia (Start to Impact Project)</h5>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="frontofcard">
+                      <img src="./assets/img/prog-xmas-list.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="backofcard">
+                        <div class="backofcard-item bg-dark-green">
+                          <p>html</p>
+                          <p>css</p>
+                          <p>bootstrap</p>
+                          <p>javascript</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Lista regali di natale (Boolean Project)</h5>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="frontofcard">
+                      <img src="./assets/img/prog-youtube.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="backofcard">
+                        <div class="backofcard-item bg-dark-green">
+                          <p>html</p>
+                          <p>css</p>
+                          <p>bootstrap</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Youtube copy (YT Tutorial Project)</h5>
+                    </div>
+                  </div>
+              </div>
+          </section>
+          <section id="skills" class="info pt-5 text-center d-flex flex-column">
+              <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
+                  <div class="section-break d-flex"></div>
+                  <h3 class="my-4 text-uppercase">Skills</h3>
+              </div>
+              <div class="info-description-top text-left">
+                  <div class="container hard-skills-container">
+                      
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                        </div>
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>                          
+                        </div>
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>                          
+                        </div>
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png" alt="bootstrap"/>                          
+                        </div>
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/sass.png" alt="sass"/>                          
+                        </div>
+                         <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>                           
+                        </div>
+                        <div class="hard-skills m-3">
+                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>                         
+                        </div>           
+                  </div>
+              </div>
+              <div class="soft-skills"></div>
+          </section>
+          <section  id="contatti" class="info pt-5 text-center">
+              <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
+                  <div class="section-break d-flex"></div>
+                  <h3 class="my-4 text-uppercase">Contatti</h3>
+              </div> 
+              <div class="row contacts-wrapper">
+                  <div class="col-md-6 d-flex flex-column">
+                  <div class="col-md-6 contacts d-flex flex-column">
+                      <a href="https://www.linkedin.com/in/maria-carta19/" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></p></a> 
+                      <a href="https://github.com/MaryJ-19" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></p></a> 
+                  </div>
+                  </div>
+                  <div class="col-md-6 contact-form pb-5">
+                      <form action=" " method="get">
+                          <div class="row">
+                              <div class="col-md-6 pb-3">
+                                  <input type="text" class="form-control input-lg" placeholder="Nome" aria-label="First name" required>
+                              </div>
+                              <div class="col-md-6 pb-3">
+                                  <input 
+                                  type="number" 
+                                  class="form-control input-lg" 
+                                  placeholder="Telefono" 
+                                  aria-label="phone">
+                              </div>
+                              <div class="col-12 pb-3">
+                                  <input
+                                  type="email" 
+                                  class="form-control input-lg" 
+                                  placeholder="Indirizzo e-mail" 
+                                  aria-label="e-mail" required>
+                              </div>
+                              <div class="col-12 pb-3">
+                                  <textarea 
+                                  class="form-control" 
+                                  rows="4" 
+                                  id="comment" 
+                                  name="text" 
+                                  placeholder="Testo del messaggio"
+                                  ></textarea>
+                              </div>
+                          </div>
+                          <button type="submit" class="btn btn-lg w-100 text-uppercase border-0">Contattaci</button>
+                      </form>
+                      </div>
+              </div>  
+          </section>
+        </div>
+    </main>
+    <footer class="flex-wrap justify-content-center align-items-center py-4 bg-light-blue">
+        <div class="container-fluid pb-5 px-5 d-md-flex flex-md-row-reverse justify-content-between">
+        <ul class="nav  justify-content-center text-uppercase">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-black">Home</a></li>
+            <li class="nav-item"><a href="#skills" class="nav-link px-2 text-black">Skills</a></li>
+            <li class="nav-item"><a href="#chi-sono" class="nav-link px-2 text-black">chi sono</a></li>
+            <li class="nav-item d-none d-sm-block"><a href="#progetti" class="nav-link px-2 text-black">progetti</a></li>
+            <li class="nav-item d-none d-md-block"><a href="#contatti" class="nav-link px-2 text-black">Contatti</a></li>
+            <li class="nav-item dropdown d-md-none">
+                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Altro
+                </a>
+                <ul class="dropdown-menu text-uppercase bg-light-blue">
+                  <li><a class="dropdown-item d-sm-none" href="#">progetti</a></li>
+                  <li><a class="dropdown-item" href="#">Contatto</a></li>
+                </ul>
+              </li>
+        </ul>
+        <div class=" justify-content-center align-items-center">
+            <p class=" mb-0 text-center">Maria Carta, Front End Developer</p>
+            <p class=" mb-0 text-center">© 2024 Company, Inc</p>  
+            <p class=" mb-0 text-center">Icons by <a href="https://icons8.com">Icons8</a></p>  
+        </div>
+        </div>
+        <a href="#home" type="button" class="btn btn-floating go-up position-fixed bg-black text-white">^</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

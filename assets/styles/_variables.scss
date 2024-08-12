@@ -1,0 +1,23 @@
+/* colors */
+$light-blue : #9ACBF6;
+$dark-red : #c6daf7;
+$dark-green: #8AB49F;
+$light-grey31 : #e4e4e4;
+$white : #ffffff;
+$black: #000000;
+$dark-blue: #1b2a3a;
+$dark-grey: #212529;
+
+$theme-colors: (
+    'light-blue': $light-blue,
+    'dark-red': $dark-red,
+    'dark-green': $dark-green,
+    'light-grey31': $light-grey31,
+    'white': $white,
+    'black': $black,
+    'dark-blue': $dark-blue,
+    'dark-grey': $dark-grey
+);
+
+/* breakpoints */
+$md: 768px;

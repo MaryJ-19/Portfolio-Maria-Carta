@@ -1,0 +1,360 @@
+@import "variables";
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;  
+    font-family: 'montserrat', serif;
+
+}
+header{
+    // background-color: transparent;
+    // position:sticky;
+    // top: 0;
+    // left: 0;
+    // z-index: 1;
+    .circle {
+        height: 1rem;
+        width: 1rem;
+        margin: 0 20px;
+    }
+    .header-title {
+        font-size: 1rem;
+        font-family: "montserrat";
+        font-weight: 400;
+        font-style: normal;
+          
+    }
+    .navbar{
+        padding: 20px 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        box-shadow: #4da2a924 0rem 0.14rem 0.8rem 0.14rem;
+
+        .navbar-toggler-icon {
+            z-index: 1;   
+        } 
+        .navbar-toggler{
+            .icon-toggle {display:none}
+            &.share-toggler {display: block !important}
+        }
+        .navbar-toggler[aria-expanded="true"]{
+            .icon-toggle {
+                width: 3.2rem;
+                display:block;
+                position: absolute;
+                z-index: 1;
+                flex-basis: 100%;
+                flex-grow: 1;
+                left: 0.7rem;
+                top: 0.7rem;
+            }
+         }
+          .navbar-collapse.collapsing,
+          .navbar-collapse.show {
+                position:  fixed;
+                top: 0;  
+                left: 0; 
+                align-items: stretch;         
+                background-color: $dark-red;
+                height: 100%;
+                width: 100%;
+
+                .navbar-nav {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .nav-link{
+                        text-transform: uppercase;
+                        color: $white;
+                        font-size: 2em;  
+
+                        &.active {
+                            font-weight: bold;
+                        }
+                        &:hover{
+                            color: $dark-red !important;
+                        }
+                    }
+                    .dropdown-toggle{
+                        display: none;
+                    }
+                }
+            }
+        .dropdown-menu {
+            &.show {
+            background-color: $light-blue;
+            } 
+        }
+        &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+      }
+    }
+}
+
+.nav-link{
+     &:hover {
+    color: $dark-red;
+    }
+}
+
+.circle {
+    height: 4.28rem;
+    width: 4.28rem;
+}
+main {
+    .subtitle-text {
+        border-top: 4px solid $dark-red;
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        width: 20%;
+        justify-content: center;
+           
+    }
+    .img-banner{
+        height: 750px;
+        object-fit: cover;
+    }
+ 
+    .img-text{
+        font-size: 6rem;
+        font-weight: 700;
+        bottom: 60%;
+        left: 345px;
+        color: #FFF;
+        font-family: "Montserrat";
+        width: 55rem;
+        text-shadow: rgba(0, 0, 0, 0.44) 0.2rem 0.2rem 0.2rem;
+        text-align: center;
+    }
+    }
+    .section-break {
+        width: 3.6rem;
+        height: 0.2rem;
+        background-color: $dark-red;
+        
+    }
+    .info-description-top{
+        padding: 1rem 0;
+
+        .hard-skills-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+    }  
+    .card {
+        width: 400px;
+        position: relative;
+        border: initial;
+        align-items: center;
+
+        .card-img, .card-img-top, .card-img-bottom, .backofcard-item{
+            border-radius: 0.6rem;  
+            border: 1px solid #6332ff3d;
+            box-shadow: #ccbcff36 0.1rem 0.1rem 4rem;
+        }
+        
+
+        .frontofcard, .backofcard {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .frontofcard {
+            z-index: 3;
+        }
+        .backofcard {
+            z-index: 2;
+            height: 100%;
+            position: absolute;
+
+        }
+
+    }
+    .card-body{
+        padding: 1.4rem 0;
+        text-align: left;
+        width: 100%;
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: bolder;
+            flex: 1 0 auto;
+            word-wrap: break-word;
+        }
+    }
+
+    .card:hover{ transform: rotateY(180deg); } 
+    .frontofcard { backface-visibility: hidden; }
+    .card { transform-style: preserve-3d; }
+    .card { transition: all 0.8s ease-in; }
+    .backofcard { transform: rotateY(180deg);}
+    
+
+    .backofcard-item{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    //contacts page
+    .contacts-page{
+
+        background-image: url(../img/telephone-booths.png);
+        background-repeat: repeat-y;
+        background-position: center;
+
+        .contacts-section {
+            margin: 104px 0;
+            padding: 0 20px;
+        }
+
+        .contacts-social{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+       .contacts-wrapper {
+        background-color: rgba(245, 255, 250, 0.9);
+        border-radius: 50px;
+        box-shadow: 3px 2px 14px #21252938;
+
+            p {
+                padding-left: 10px;
+                margin: 0;
+            }
+            a {
+                color: $dark-blue;
+                text-decoration: none;
+                padding: 20px 0;
+                margin: 0;
+                cursor: pointer;
+
+            }
+            .btn {
+                background-color: $dark-red;
+                color: $dark-grey;
+            }
+        } 
+    }
+
+    //project page
+    .project-container{
+        margin-top: 100px;
+    }
+    .project-item{
+        min-height: 500px;
+
+        .project-img{
+            max-width: 300px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.201);
+            box-shadow: #ccbcff36 0.1rem 0.1rem 4rem;
+        }
+    }
+
+ 
+footer{
+    a {
+        font-size: 0.8rem;
+         &:hover {
+        color: $dark-red;
+        }
+    }
+    .go-up {
+        bottom:  1.4rem;
+        right:  1.4rem;
+        opacity: 0.3;
+        &:visited{
+            color: $white;
+        }
+    }
+}
+
+@media (min-width: $md) {
+    header {
+        position:static;
+        background-color: $white;
+        .header-title {
+            font-size: 1rem !important;
+            font-weight: 400;
+        }
+       .navbar{
+        padding: 30px;
+        background-color: transparent;
+        position: absolute;
+      
+        .nav-link {
+            text-transform: uppercase;
+            color: $black;
+            font-size: 14px;
+              &:hover {
+                color: $dark-red;
+            }  
+        }
+        .navbar-toggler[aria-expanded="true"]{
+            .icon-toggle {
+                left: 0.7rem;
+                top: -9.6rem;
+            }
+         }
+       } 
+    }  
+    
+        .img-text{
+            font-size: 5rem;
+            font-weight: 700;
+            bottom: 20%;
+            left: 130px;
+            color: $white;
+            text-shadow: rgb(0, 0, 0) 0.2rem 0.2rem 0.2rem;
+            font-family: "Montserrat";
+            width: 47rem;
+            text-shadow: rgb(0 0 0 / 44%) 0.2rem 0.2rem 0.2rem;
+        }
+        .contacts-page {
+
+            .contacts-section {
+                margin: 150px 0;
+                padding: 20px 50px;
+            }
+        }
+        .project-container{
+            margin-top: 100px;
+        }
+        .project-item{
+            min-height: 500px;
+    
+            .project-img{
+                max-width: 600px;
+                border-radius: 20px;
+            }
+        }
+    
+}
+
+@media (min-width: $md) {
+
+}
+
+
