@@ -1,22 +1,27 @@
 /* colors */
 $light-blue : #9ACBF6;
-$dark-red : #c6daf7;
-$dark-green: #8AB49F;
-$light-grey31 : #e4e4e4;
+$light-grey : #c6daf7;
+$light-violet: #8083e8;
+$light-green: #8AB49F;
 $white : #ffffff;
 $black: #000000;
+$violet: #6332ff3d;
 $dark-blue: #1b2a3a;
-$dark-grey: #212529;
+$shadow-grey: #21252938;
+$shadow-violet: #ccbcff36;
+
 
 $theme-colors: (
     'light-blue': $light-blue,
-    'dark-red': $dark-red,
-    'dark-green': $dark-green,
-    'light-grey31': $light-grey31,
+    'light-grey': $light-grey,
+    'light-violet': $light-violet,
+    'light-green': $light-green,
     'white': $white,
     'black': $black,
+    'violet': $violet,
     'dark-blue': $dark-blue,
-    'dark-grey': $dark-grey
+    'shadow-grey': $shadow-grey,
+    'shadow-violet': $shadow-violet
 );
 
 /* breakpoints */

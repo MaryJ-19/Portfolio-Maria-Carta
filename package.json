@@ -1,0 +1,30 @@
+{
+  "name": "progetto-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaryJ-19/progetto-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaryJ-19/progetto-portfolio/issues"
+  },
+  "homepage": "https://github.com/MaryJ-19/progetto-portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass": "^1.77.8",
+    "sass-loader": "^16.0.1",
+    "style-loader": "^4.0.0"
+  }
+}

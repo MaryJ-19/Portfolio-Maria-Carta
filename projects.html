@@ -14,30 +14,30 @@
     <header class="mb-5">
         <nav id="home" class="container-fluid navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
-                <div class="circle rounded-circle mr-4 bg-dark-red"></div>
+              <a class="navbar-brand d-flex align-items-center justify-content-center" href="./index.html">
+                <div class="circle rounded-circle mr-4 bg-light-grey"></div>
                 <h1 class="header-title mb-0">Maria Carta, Front End developer</h1>
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon d-flex"></span>
-                <img class="icon-toggle" width="48" height="48" src="https://img.icons8.com/parakeet-line/48/FFFFFF/delete-sign.png" alt="close-button" title="close-button"/>
+                <img class="icon-toggle" width="48" height="48" src="https://img.icons8.com/parakeet-line/48/FFFFFF/delete-sign.png" alt="icona chiudi" title="close-button"/>
               </button>
               <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbarNavDropdown">
                <ul class="navbar-nav">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="./index.html">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                   <li class="nav-item">
+                    <a class="nav-link" href="index.html#chi-sono">chi sono</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#chi-sono">chi sono</a>
+                    <a class="nav-link" href="index.html#skills">skills</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./projects.html">progetti</a>
                   </li>
                   <li class="nav-item d-md-none d-lg-block">
-                    <a class="nav-link" href="./contacts.html">Contatti</a>
+                    <a class="nav-link" href="./contacts.html">contatti</a>
                   </li>
                   <li class="nav-item dropdown d-lg-none">
                     <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,7 +45,7 @@
                     </a>
                     <ul class="dropdown-menu text-uppercase">
                       <li>
-                        <a class="dropdown-item" href="#contatti">Contatti</a>
+                        <a class="dropdown-item" href="./contacts.html">Contatti</a>
                       </li>
                     </ul>
                   </li>
@@ -55,60 +55,87 @@
         </nav>
     </header>
     <main>
-       <div class="project-container">
-            <div class="project-item bg-dark-green">
-                <div class="project-item container pt-5 ">
-                    <div class="d-md-flex justify-content-between align-items-start pt-5 px-3">
-                        <img src="./assets/img/prog-pomelia.png" class="project-img" alt="...">
-                        <div class="text-white pt-4">
-                        <h2 class="project-title fw-bold pb-3">Hotel Pomelia (Start to Impact Project)</h2>
-                        <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
-                        <p>HTML, CSS, BOOTSTRAP </p>
-                        </div>
-                    </div>
+        <div class="project-page">
+            <div class="project-item bg-light-green">
+                <div id="pomelia" class="row project-item py-5 px-3">
+                      <div class="col-lg-6 d-md-flex justify-content-center align-items-start">
+                        <img src="./assets/img/img-projects/img-prog-pomelia/prog-pomelia.png" class="project-img thumbnail" alt="home page progetto pomelia">
+                      </div>
+                      <div class="col-lg-6 text-shadow-grey pt-4 text-lg-start">
+                          <h2 class="project-title fw-bold pb-3">Hotel Pomelia (Start to Impact Project)</h2>
+                          <h3 class="project-body">
+                            L'obiettivo del progetto era quello di creare una landing page per un eco hotel nel cuore di Ragusa, rendendo chiara la loro mission di sostenibilità attraverso le varie iniziative e i servizi offerti. <br>
+                            La struttura della pagina è semplice e lineare, i principali colori scelti sono il beige e il verde scuro per ricordare sia la pietra calcarea usata in molte chiese siciliane, sia il verde delle riserve naturali che circondano Ragusa stessa. 
+                            <br> Infine, per lo sfondo è stato scelta una decorazione che ricorda il barocco. 
+                            <br> La barra di navigazione guida nelle varie sezioni che si possono vedere anche scorrendo nella pagina. 
+                            <br> Infine il footer ricapitola le informazioni principali e indirizza alle pagine social della struttura, mentre una freccia permette di tornare in alto nella pagina. 
+                          </h3>
+                          <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
+                          <p>HTML, CSS, BOOTSTRAP </p>
+                      </div>
+                      <div class="d-lg-flex col-lg-6 justify-content-center">
+                        <img src="./assets/img/img-projects/img-prog-pomelia/prog-pomelia-1.png" class="project-img screenshots" alt="particolare su barra di navigazione home page progetto pomelia">
+                        <img src="./assets/img/img-projects/img-prog-pomelia/prog-pomelia-2.png" class="project-img screenshots" alt="particolare su servizi offerti home page progetto pomelia">
+                        <img src="./assets/img/img-projects/img-prog-pomelia/prog-pomelia-3.png" class="project-img screenshots" alt="particolare su footer home page progetto pomelia">
+                      </div>
                 </div>
             </div>
             <div class="project-item bg-light-blue">
-                <div class="project-item container pt-5 ">
-                    <div class="d-md-flex justify-content-between align-items-start pt-5 px-3">
-                        <img src="./assets/img/prog-xmas-list.png" class="project-img" alt="...">
-                        <div class="text-white pt-4">
-                        <h2 class="project-title fw-bold pb-3">Lista regali di natale (Boolean Project)</h2>
-                        <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
-                        <p>HTML, CSS, BOOTSTRAP </p>
+                <div id="xmas" class="row project-item py-5 px-3">
+                        <div class="col-lg-6 d-md-flex justify-content-center align-items-start">
+                          <img src="./assets/img/img-projects/img-prog-xmas-list/prog-xmas-list.png" class="project-img thumbnail" alt="home page progetto regali di natale">
                         </div>
-                    </div>
+                        <div class="col-lg-6 text-shadow-grey pt-4 text-lg-start">
+                          <h2 class="project-title fw-bold pb-3">Lista regali di natale (Boolean Project)</h2>
+                          <h3 class="project-body">
+                            L'obiettivo del progetto era quello di creare una lista dinamica per la gestione dei regali di Natale. 
+                            L'interfaccia permette di inserire tramite un form un nome, un prezzo e una descrizione per il regalo che potrà essere aggiunto in lista cliccando
+                            sul pulsante +. L'elemento viene così aggiunto in una lista e viene aggiornato il campo della 'spesa totale'.
+                            E' poi possibile aggiungere un altro elemento oppure rimuovere quelli già presenti cliccando il pulsante x.
+                          </h3>
+                          <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
+                          <p>HTML, CSS, BOOTSTRAP, JAVASCRIPT</p>
+                        </div>
+                        <div class="d-lg-flex col-lg-6 justify-content-center">
+                          <img src="./assets/img/img-projects/img-prog-xmas-list/prog-xmas-list-1.png" class="project-img screenshots" alt="particolare su aggiunta elemento alla lista">
+                          <img src="./assets/img/img-projects/img-prog-xmas-list/prog-xmas-list-2.png" class="project-img screenshots" alt="particolare su elemento aggiunto alla lista">
+                          <img src="./assets/img/img-projects/img-prog-xmas-list/prog-xmas-list-3.png" class="project-img screenshots" alt="particolare su tre elementi aggiunti alla lista">
+                        </div>
                 </div>
             </div>
-            <div class="project-item bg-dark-red">
-                <div class="project-item container pt-5 ">
-                    <div class="d-md-flex justify-content-between align-items-start pt-5 px-3">
-                        <img src="./assets/img/prog-youtube.png" class="project-img" alt="...">
-                        <div class="text-white pt-4">
-                        <h2 class="project-title fw-bold pb-3">Youtube copy (YT Tutorial Project)</h2>
-                        <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
-                        <p>HTML, CSS, BOOTSTRAP </p>
+            <div class="project-item bg-light-grey">
+                <div id="youtube" class="row project-item py-5 px-3">
+                    <div class="col-lg-6 d-md-flex justify-content-center align-items-start">
+                        <img src="./assets/img/img-projects/img-prog-youtube/prog-youtube.png" class="project-img thumbnail" alt="home page progetto youtube">
+                    </div>  
+                        <div class="col-lg-6 text-dark-blue pt-4 text-lg-start">
+                          <h2 class="project-title fw-bold pb-3">Youtube copy (YT Tutorial Project)</h2>
+                          <h3 class="project-body">
+                            L'obiettivo del progetto era quello di raffigurare fedelmente la pagina home di youtube per sperimentare e approfondire 
+                            la libreria Bootstrap v5.0
+                          </h3>
+                          <h3 class="project-subtitle ">Tecnologie utilizzate</h3>
+                          <p>HTML, CSS, BOOTSTRAP </p>
                         </div>
-                    </div>
                 </div>
             </div>
        </div>
     </main>
     <footer class="footer flex-wrap justify-content-center align-items-center py-4 bg-light-blue">
         <div class="container-fluid pb-5 px-5 d-md-flex flex-md-row-reverse justify-content-between">
-        <ul class="nav  justify-content-center text-uppercase">
-            <li class="nav-item"><a href="#home" class="nav-link px-2 text-black">Home</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link px-2 text-black">Skills</a></li>
-            <li class="nav-item"><a href="#chi-sono" class="nav-link px-2 text-black">chi sono</a></li>
-            <li class="nav-item d-none d-sm-block"><a href="#progetti" class="nav-link px-2 text-black">progetti</a></li>
-            <li class="nav-item d-none d-md-block"><a href="#contatti" class="nav-link px-2 text-black">Contatto</a></li>
+        <ul class="nav justify-content-center text-uppercase">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-black">Home</a></li>
+            <li class="nav-item"><a href="index.html#chi-sono" class="nav-link px-2 text-black">chi sono</a></li>
+            <li class="nav-item"><a href="index.html#skills" class="nav-link px-2 text-black">Skills</a></li>
+            <li class="nav-item d-none d-sm-block"><a href="./projects.html" class="nav-link px-2 text-black">progetti</a></li>
+            <li class="nav-item d-none d-md-block"><a href="./contacts.html" class="nav-link px-2 text-black">contatti</a></li>
             <li class="nav-item dropdown d-md-none">
                 <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Altro
                 </a>
                 <ul class="dropdown-menu text-uppercase bg-light-blue">
-                  <li><a class="dropdown-item d-sm-none" href="#">progetti</a></li>
-                  <li><a class="dropdown-item" href="#">Contatto</a></li>
+                  <li><a class="dropdown-item d-sm-none" href="./projects.html">progetti</a></li>
+                  <li><a class="dropdown-item" href="./contacts.html">contatti</a></li>
                 </ul>
               </li>
         </ul>

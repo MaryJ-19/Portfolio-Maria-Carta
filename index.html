@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Maria Carta, Front End developer" />
+    <meta property="og:description" content="Portfolio Maria Carta, Front End developer" />
+    <meta property="og:url" content="https://www.portfolio-maria-carta.com" />
+    <meta property="og:image" content="https://www.tuosito.com/path/to/immagine.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Portfolio Maria Carta" />
     <title>Maria Carta, Front End developer</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,24 +20,24 @@
     <header>
         <nav id="home" class="container-fluid navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
-                <div class="circle rounded-circle mr-4 bg-dark-red"></div>
+              <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="circle rounded-circle mr-4 bg-light-grey"></div>
                 <h1 class="header-title mb-0">Maria Carta, Front End developer</h1>
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon d-flex"></span>
-                <img class="icon-toggle" width="48" height="48" src="https://img.icons8.com/parakeet-line/48/FFFFFF/delete-sign.png" alt="close-button" title="close-button"/>
+                <img class="icon-toggle" width="48" height="48" src="https://img.icons8.com/parakeet-line/48/FFFFFF/delete-sign.png" alt="icona chiudi" title="close-button"/>
               </button>
               <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbarNavDropdown">
                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="index.html#chi-sono">chi sono</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#chi-sono">chi sono</a>
+                    <a class="nav-link" href="index.html#skills">Skills</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./projects.html">progetti</a>
@@ -45,7 +51,7 @@
                     </a>
                     <ul class="dropdown-menu text-uppercase">
                       <li>
-                        <a class="dropdown-item" href="#contatti">Contatti</a>
+                        <a class="dropdown-item" href="./contacts.html">Contatti</a>
                       </li>
                     </ul>
                   </li>
@@ -54,25 +60,37 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="home-page">
         <div class="image-banner position-relative" >
              <picture>
-                <source media="(min-width:650px)" srcset="./assets/img/71CE3EF7-3FEE-4477-B001-1005F8F7E66D_1_102_o.jpeg">
-                <source media="(min-width:465px)" srcset="./assets/img/banner-mobile.jpeg"> 
-                <img src="./assets/img/71CE3EF7-3FEE-4477-B001-1005F8F7E66D_1_102_o.jpeg" alt="random-img" class="img-fluid img-banner w-100" style="width:auto;">
+                <source media="(min-width:650px)" srcset="./assets/img/img-landing/banner.jpeg">
+                <source media="(max-width:465px)" srcset="./assets/img/img-landing/banner-mobile.jpeg"> 
+                <img src="./assets/img/img-landing/banner.jpeg" alt="panorama città di cagliari" class="img-fluid img-banner w-100">
               </picture>
-            <p class="img-text flex-wrap position-absolute d-flex">Ciao, sono Maria e sono una Front End Developer!</p>
         </div>
         <div class="container"> 
-          <section  id="chi-sono" class="info pt-5 text-center">
+          <section  id="chi-sono" class="info d-flex flex-column align-items-center pt-5 text-center">
             <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
                 <div class="section-break d-flex"></div>
                 <h3 class="my-4 text-uppercase">chi sono</h3>
             </div>
-            <img src="./assets/img/ritratto.jpg" title="image" alt="image" width="300" class="image-banner img-fluid rounded-circle">
-            <div class="info-description pt-5">
-              Front End developer with 4+ years experience in the industry, knowledge of HTML5, CSS3 and Javascript. Familiar with GIT, Azure DevOps and Agile's methodology SCRUM.
+            <img src="./assets/img/img-landing/Maria-Carta3.jpg" title="image" alt="foto di Maria Carta" width="300" class="img-fluid rounded-circle round-img">
+            <div class="info-description p-5">
+              <p>Ciao, sono Maria!</p>
+             <p>
+              Dopo una laurea in Psicologia all'Università di Cagliari, 
+              ho scelto di cambiare percorso e seguire la mia passione per la tecnologia,
+              così ho iniziato uno stage in Accenture, dove ho imparato le basi dello sviluppo web. 
+              <br>
+              Ora, con oltre 4 anni di esperienza come sviluppatrice Front End, ho lavorato su siti web per banche italiane e clienti internazionali nei settori industriale, automobilistico e moda. <br>
+
+              Sono una persona molto curiosa, mi piace fare nuove esperienze e penso che non si smetta mai di imparare!
+              Nel tempo libero amo viaggiare e sono un'appassionata di lingue straniere, infatti oltre l'inglese parlo un po' di francese e portoghese.
+            </p>
             </div>
+            <a href="./about.html">
+              <button type="button" class="btn btn-lg  text-uppercase border-0 bg-light-grey">Guarda il mio curriculum</button>
+            </a>
           </section>
           <section  id="progetti"class="info pt-5 text-center">
               <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
@@ -83,56 +101,74 @@
                   <div class="col">
                     <div class="card">
                       <div class="frontofcard">
-                        <img src="./assets/img/prog-pomelia.png" class="card-img-top" alt="...">
+                        <img src="./assets/img/img-projects/img-prog-pomelia/prog-pomelia.png" class="card-img-top" alt="home page del progetto pomelia">
                       </div>
                       <div class="backofcard">
-                        <div class="backofcard-item bg-dark-green">
-                          <p>html</p>
-                          <p>css</p>
-                          <p>bootstrap</p>
-                        </div>
+                        <div class="backofcard-item bg-light-green d-flex flex-column">
+                          <p>Tecnologie Utilizzate</p>
+                           <div class="card-text">
+                             <p>html</p>
+                             <p>css</p>
+                             <p>bootstrap</p>
+                           </div>
+                         </div>
                       </div>
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Hotel Pomelia (Start to Impact Project)</h5>
+                      <a href="./projects.html#pomelia">
+                        <h5 class="card-title">Hotel Pomelia (Start to Impact Project)</h5>
+                      </a>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
                       <div class="frontofcard">
-                      <img src="./assets/img/prog-xmas-list.png" class="card-img-top" alt="...">
+                      <img src="./assets/img/img-projects/img-prog-xmas-list/prog-xmas-list.png" class="card-img-top" alt="home page del progetto lista regali di natale">
                       </div>
                       <div class="backofcard">
-                        <div class="backofcard-item bg-dark-green">
-                          <p>html</p>
-                          <p>css</p>
-                          <p>bootstrap</p>
-                          <p>javascript</p>
+                        <div class="backofcard-item bg-light-blue d-flex flex-column">
+                         <p>Tecnologie Utilizzate</p>
+                          <div class="card-text">
+                            <p>html</p>
+                            <p>css</p>
+                            <p>bootstrap</p>
+                            <p>javascript</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Lista regali di natale (Boolean Project)</h5>
+                      <a href="./projects.html#xmas">
+                        <h5 class="card-title">Lista regali di natale (Boolean Project)</h5>
+                      </a>  
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
                       <div class="frontofcard">
-                      <img src="./assets/img/prog-youtube.png" class="card-img-top" alt="...">
+                      <img src="./assets/img/img-projects/img-prog-youtube/prog-youtube.png" class="card-img-top" alt="home page del progetto youtube">
                       </div>
                       <div class="backofcard">
-                        <div class="backofcard-item bg-dark-green">
-                          <p>html</p>
-                          <p>css</p>
-                          <p>bootstrap</p>
-                        </div>
+                        <div class="backofcard-item bg-light-violet d-flex flex-column">
+                          <p>Tecnologie Utilizzate</p>
+                           <div class="card-text">
+                             <p>html</p>
+                             <p>css</p>
+                             <p>bootstrap</p>
+                           </div>
+                         </div>
                       </div>
                     </div>
                     <div class="card-body">
-                      <h5 class="card-title">Youtube copy (YT Tutorial Project)</h5>
+                      <a href="./projects.html#youtube">
+                        <h5 class="card-title">Youtube copy (YT Tutorial Project)</h5>
+                      </a>
                     </div>
                   </div>
               </div>
+              <a href="./projects.html">
+                <button type="button" class=" mt-5 btn btn-lg  text-uppercase border-0 bg-light-grey">Scopri i progetti</button>
+              </a>
           </section>
           <section id="skills" class="info pt-5 text-center d-flex flex-column">
               <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
@@ -143,105 +179,97 @@
                   <div class="container hard-skills-container">
                       
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1"/>
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="icona html-5"/>
                         </div>
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3"/>                          
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="icona css3"/>                          
                         </div>
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>                          
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png" alt="icona javascript"/>                          
                         </div>
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png" alt="bootstrap"/>                          
+                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/bootstrap.png" alt="icona bootstrap"/>                          
                         </div>
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/sass.png" alt="sass"/>                          
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/sass.png" alt="icona sass"/>                          
                         </div>
                          <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="git"/>                           
+                          <img width="48" height="48" src="https://img.icons8.com/color/48/git.png" alt="icona git"/>                           
                         </div>
                         <div class="hard-skills m-3">
-                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="azure-1"/>                         
+                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/azure-1.png" alt="icona azure"/>                         
                         </div>           
                   </div>
               </div>
               <div class="soft-skills"></div>
           </section>
-          <section  id="contatti" class="info pt-5 text-center">
+          <section  id="contatti" class="info py-5 text-center">
               <div class="section-title d-flex justify-content-center align-items-center flex-column mt-5">
                   <div class="section-break d-flex"></div>
                   <h3 class="my-4 text-uppercase">Contatti</h3>
               </div> 
-              <div class="row contacts-wrapper">
-                  <div class="col-md-6 d-flex flex-column">
-                  <div class="col-md-6 contacts d-flex flex-column">
-                      <a href="https://www.linkedin.com/in/maria-carta19/" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/></p></a> 
-                      <a href="https://github.com/MaryJ-19" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/></p></a> 
+              <div class="contacts-wrapper d-flex flex-column align-items-center justify-content-center">
+                  <p class="w-50 mb-4">Grazie per aver visitato il mio portfolio! 
+                      Se hai domande, desideri discutere di un'idea o semplicemente vuoi salutare, 
+                      non esitare a contattarmi.
+                  </p>
+                  <div class="contacts d-flex align-items-center justify-content-center ">
+                      <a href="https://www.linkedin.com/in/maria-carta19/" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="icona linkedin"/></p></a> 
+                      <a href="https://github.com/MaryJ-19" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="icona github"/></p></a> 
                   </div>
-                  </div>
-                  <div class="col-md-6 contact-form pb-5">
-                      <form action=" " method="get">
-                          <div class="row">
-                              <div class="col-md-6 pb-3">
-                                  <input type="text" class="form-control input-lg" placeholder="Nome" aria-label="First name" required>
-                              </div>
-                              <div class="col-md-6 pb-3">
-                                  <input 
-                                  type="number" 
-                                  class="form-control input-lg" 
-                                  placeholder="Telefono" 
-                                  aria-label="phone">
-                              </div>
-                              <div class="col-12 pb-3">
-                                  <input
-                                  type="email" 
-                                  class="form-control input-lg" 
-                                  placeholder="Indirizzo e-mail" 
-                                  aria-label="e-mail" required>
-                              </div>
-                              <div class="col-12 pb-3">
-                                  <textarea 
-                                  class="form-control" 
-                                  rows="4" 
-                                  id="comment" 
-                                  name="text" 
-                                  placeholder="Testo del messaggio"
-                                  ></textarea>
-                              </div>
-                          </div>
-                          <button type="submit" class="btn btn-lg w-100 text-uppercase border-0">Contattaci</button>
-                      </form>
-                      </div>
+                  <a href="./contacts.html">
+                    <button type="button" class="my-5 btn btn-lg text-uppercase border-0 bg-light-grey">Restiamo in contatto</button>
+                  </a>
               </div>  
-          </section>
+          </section> 
         </div>
     </main>
-    <footer class="flex-wrap justify-content-center align-items-center py-4 bg-light-blue">
-        <div class="container-fluid pb-5 px-5 d-md-flex flex-md-row-reverse justify-content-between">
-        <ul class="nav  justify-content-center text-uppercase">
-            <li class="nav-item"><a href="#home" class="nav-link px-2 text-black">Home</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link px-2 text-black">Skills</a></li>
-            <li class="nav-item"><a href="#chi-sono" class="nav-link px-2 text-black">chi sono</a></li>
-            <li class="nav-item d-none d-sm-block"><a href="#progetti" class="nav-link px-2 text-black">progetti</a></li>
-            <li class="nav-item d-none d-md-block"><a href="#contatti" class="nav-link px-2 text-black">Contatti</a></li>
-            <li class="nav-item dropdown d-md-none">
-                <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Altro
-                </a>
-                <ul class="dropdown-menu text-uppercase bg-light-blue">
-                  <li><a class="dropdown-item d-sm-none" href="#">progetti</a></li>
-                  <li><a class="dropdown-item" href="#">Contatto</a></li>
-                </ul>
-              </li>
-        </ul>
-        <div class=" justify-content-center align-items-center">
-            <p class=" mb-0 text-center">Maria Carta, Front End Developer</p>
-            <p class=" mb-0 text-center">© 2024 Company, Inc</p>  
-            <p class=" mb-0 text-center">Icons by <a href="https://icons8.com">Icons8</a></p>  
-        </div>
-        </div>
-        <a href="#home" type="button" class="btn btn-floating go-up position-fixed bg-black text-white">^</a>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <footer class="footer flex-wrap justify-content-center align-items-center py-4 bg-light-blue">
+      <div class="container-fluid pb-5 px-5 d-md-flex flex-md-row-reverse justify-content-between">
+      <ul class="nav  justify-content-center text-uppercase">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-black">Home</a></li>
+          <li class="nav-item"><a href="index.html#chi-sono" class="nav-link px-2 text-black">chi sono</a></li>
+          <li class="nav-item"><a href="index.html#skills" class="nav-link px-2 text-black">Skills</a></li>
+          <li class="nav-item d-none d-sm-block"><a href="./projects.html" class="nav-link px-2 text-black">progetti</a></li>
+          <li class="nav-item d-none d-md-block"><a href="./contacts.html" class="nav-link px-2 text-black">contatti</a></li>
+          <li class="nav-item dropdown d-md-none">
+              <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Altro
+              </a>
+              <ul class="dropdown-menu text-uppercase bg-light-blue">
+                <li><a class="dropdown-item d-sm-none" href="./projects.html">progetti</a></li>
+                <li><a class="dropdown-item" href="./contacts.html">contatti</a></li>
+              </ul>
+            </li>
+      </ul>
+      <div class=" justify-content-center align-items-center">
+          <p class=" mb-0 text-center">Maria Carta, Front End Developer</p>
+          <p class=" mb-0 text-center">© 2024 Company, Inc</p>  
+          <p class=" mb-0 text-center">Icons by <a href="https://icons8.com">Icons8</a></p>  
+      </div>
+      </div>
+      <a href="#home" type="button" class="btn btn-floating go-up position-fixed bg-black text-white">^</a>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+        // Chiude il menu dopo il click su un link di ancoraggio
+        document.querySelectorAll('.nav-link').forEach(function(link) {
+          
+            link.addEventListener('click', function() {
+                var navbarToggler = document.querySelector('.navbar-toggler');
+                var navbarCollapse = document.querySelector('.navbar-collapse');
+                
+                // Verifica se il link è per una sezione della stessa pagina
+                if (link.getAttribute('href').includes('index.html') && navbarCollapse.classList.contains('show')) {
+                    navbarToggler.classList.add('collapsed');
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+
+    })
+    </script>
+  </body>
 </html>
