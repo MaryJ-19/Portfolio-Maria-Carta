@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Maria Carta, Front End developer" />
     <meta property="og:description" content="Portfolio Maria Carta, Front End developer" />
-    <meta property="og:url" content="https://www.portfolio-maria-carta.com" />
-    <meta property="og:image" content="https://www.tuosito.com/path/to/immagine.jpg" />
-    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maryj-19.github.io/Progetto-HTML-e-CSS-di-Maria-Carta/" />
+    <meta property="og:image" content="https://maryj-19.github.io/Progetto-HTML-e-CSS-di-Maria-Carta/assets/img/img-landing/banner.jpeg" />
+    <meta property="og:type" content="https://maryj-19.github.io/Progetto-HTML-e-CSS-di-Maria-Carta/" />
     <meta property="og:site_name" content="Portfolio Maria Carta" />
     <title>Maria Carta, Front End developer</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -15,10 +15,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
-        <nav id="home" class="container-fluid navbar navbar-expand-md navbar-light bg-light">
+        <nav id="home" class="landing-page container-fluid navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="circle rounded-circle mr-4 bg-light-grey"></div>
@@ -31,7 +32,7 @@
               <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbarNavDropdown">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="index.html#chi-sono">chi sono</a>
@@ -75,21 +76,24 @@
                 <h3 class="my-4 text-uppercase">chi sono</h3>
             </div>
             <img src="./assets/img/img-landing/Maria-Carta3.jpg" title="image" alt="foto di Maria Carta" width="300" class="img-fluid rounded-circle round-img">
-            <div class="info-description p-5">
+            <div class="info-description py-5 px-4">
               <p>Ciao, sono Maria!</p>
              <p>
               Dopo una laurea in Psicologia all'Università di Cagliari, 
               ho scelto di cambiare percorso e seguire la mia passione per la tecnologia,
               così ho iniziato uno stage in Accenture, dove ho imparato le basi dello sviluppo web. 
-              <br>
+             </p>
+             <p>
               Ora, con oltre 4 anni di esperienza come sviluppatrice Front End, ho lavorato su siti web per banche italiane e clienti internazionali nei settori industriale, automobilistico e moda. <br>
-
+             </p>
+              <p>
               Sono una persona molto curiosa, mi piace fare nuove esperienze e penso che non si smetta mai di imparare!
-              Nel tempo libero amo viaggiare e sono un'appassionata di lingue straniere, infatti oltre l'inglese parlo un po' di francese e portoghese.
+              Nel tempo libero amo viaggiare e sono un'appassionata di lingue straniere, infatti, oltre l'inglese, parlo anche un po' di francese e portoghese.
             </p>
+            <p>Scopri di più nel mio cv!</p>
             </div>
             <a href="./about.html">
-              <button type="button" class="btn btn-lg  text-uppercase border-0 bg-light-grey">Guarda il mio curriculum</button>
+              <button type="button" class="btn btn-lg  text-uppercase border-0 bg-light-grey animate__animated animate__pulse">Guarda il mio curriculum</button>
             </a>
           </section>
           <section  id="progetti"class="info pt-5 text-center">
@@ -97,6 +101,7 @@
                   <div class="section-break d-flex"></div>
                   <h3 class="my-4 text-uppercase">progetti</h3>
               </div>
+              <p>Ecco alcuni progetti su cui ho lavorato</p>
               <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 position-relative">
                   <div class="col">
                     <div class="card">
@@ -111,12 +116,15 @@
                              <p>css</p>
                              <p>bootstrap</p>
                            </div>
+                           <div class="card-see-more border mt-3 border-1 border-white">
+                            <a href="./projects.html#pomelia">Scopri di più</a>
+                           </div>
                          </div>
                       </div>
                     </div>
                     <div class="card-body">
                       <a href="./projects.html#pomelia">
-                        <h5 class="card-title">Hotel Pomelia (Start to Impact Project)</h5>
+                        <h5 class="card-title">Hotel Pomelia</h5>
                       </a>
                     </div>
                   </div>
@@ -134,12 +142,15 @@
                             <p>bootstrap</p>
                             <p>javascript</p>
                           </div>
+                          <div class="card-see-more mt-3 border border-1 border-white">
+                            <a href="./projects.html#xmas">Scopri di più</a>
+                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="card-body">
                       <a href="./projects.html#xmas">
-                        <h5 class="card-title">Lista regali di natale (Boolean Project)</h5>
+                        <h5 class="card-title">Lista regali di natale</h5>
                       </a>  
                     </div>
                   </div>
@@ -156,18 +167,21 @@
                              <p>css</p>
                              <p>bootstrap</p>
                            </div>
+                           <div class="card-see-more border mt-3 border-1 border-white">
+                            <a href="./projects.html#youtube">Scopri di più</a>
+                           </div>
                          </div>
                       </div>
                     </div>
                     <div class="card-body">
                       <a href="./projects.html#youtube">
-                        <h5 class="card-title">Youtube copy (YT Tutorial Project)</h5>
+                        <h5 class="card-title">Youtube copy</h5>
                       </a>
                     </div>
                   </div>
               </div>
               <a href="./projects.html">
-                <button type="button" class=" mt-5 btn btn-lg  text-uppercase border-0 bg-light-grey">Scopri i progetti</button>
+                <button type="button" class=" mt-5 btn btn-lg  text-uppercase border-0 bg-light-grey animate__animated animate__pulse">Scopri tutti i progetti</button>
               </a>
           </section>
           <section id="skills" class="info pt-5 text-center d-flex flex-column">
@@ -218,7 +232,7 @@
                       <a href="https://github.com/MaryJ-19" target="_blank"><p><img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="icona github"/></p></a> 
                   </div>
                   <a href="./contacts.html">
-                    <button type="button" class="my-5 btn btn-lg text-uppercase border-0 bg-light-grey">Restiamo in contatto</button>
+                    <button type="button" class="my-5 btn btn-lg text-uppercase border-0 bg-light-grey animate__animated animate__pulse">Restiamo in contatto</button>
                   </a>
               </div>  
           </section> 
@@ -248,7 +262,9 @@
           <p class=" mb-0 text-center">Icons by <a href="https://icons8.com">Icons8</a></p>  
       </div>
       </div>
-      <a href="#home" type="button" class="btn btn-floating go-up position-fixed bg-black text-white">^</a>
+      <a href="#home" type="button" class="btn btn-floating go-up position-fixed">
+        <img width="48" height="48" src="https://img.icons8.com/parakeet-line/48/circled-up.png" alt="circled-up"/>
+      </a>
   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
