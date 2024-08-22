@@ -12217,12 +12217,14 @@ header .landing-page .nav-link:hover {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-transform: uppercase;
   flex-wrap: wrap;
+  font-weight: 100;
 }
 .home-page .card .card-text p {
   padding-right: 5px;
+  margin-bottom: 0;
 }
 .home-page .card .card-see-more {
   text-transform: uppercase;
@@ -12252,7 +12254,7 @@ header .landing-page .nav-link:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
 }
 .home-page .card-body {
