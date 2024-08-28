@@ -37,4 +37,4 @@ Puoi fare doppio clic sul file per aprirlo, oppure utilizzare un server locale p
 ## Contatti
 Autore: Maria Carta
 Email: maria.carta1996@gmail.com
-LinkedIn: LinkedIn
+LinkedIn: https://www.linkedin.com/in/maria-carta19/
