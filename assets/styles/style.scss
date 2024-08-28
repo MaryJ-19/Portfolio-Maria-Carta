@@ -15,6 +15,9 @@ a {
 }
 //header 
 header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
     .circle {
         height: 1rem;
         width: 1rem;
@@ -28,11 +31,12 @@ header{
     }
     .navbar {
         padding: 20px 5px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
         box-shadow: $shadow-grey 0px 1px 10px;
+        margin-top: -70px;
+        &.landing-page {
+            margin-top: -70px;
+            background-color: #7ec5ff;
+        }
         .navbar-toggler-icon {
             z-index: 1;   
         } 
@@ -103,7 +107,8 @@ header{
 }
 //landing page
 .home-page {
-   
+    position: relative;
+    margin-top: -40px;
     .circle {
         height: 4.28rem;
         width: 4.28rem;
@@ -227,8 +232,8 @@ header{
     background-image: url(../img/img-contacts/telephone-booths.png);
     background-size: cover;
     .contacts-section {
-        margin: 104px 0;
-        padding: 0 20px;
+        margin: 70px 0 104px;
+        padding: 30px 20px;
     }
     .contacts-social{
         display: flex;
@@ -239,6 +244,8 @@ header{
     background-color: #f5fffae6;
     border-radius: 50px;
     box-shadow: 3px 2px 14px $shadow-grey;
+    max-width: 1000px;
+    margin: 0 auto;
         p {
             padding-left: 10px;
             margin: 0;
@@ -279,7 +286,7 @@ header{
 }
 //about page
 .about-page {
-    padding: 70px 40px;
+    padding: 110px 40px;
     &-title{ font-size: 36px;}
     &-subtitle{
         font-size: 18px;
@@ -335,8 +342,7 @@ footer{
 }
 @media (min-width: $md) {
     header {
-        position:static;
-        background-color: $white;
+        position:relative;
         .header-title {
             font-size: 1rem !important;
             font-weight: 400;
@@ -344,9 +350,12 @@ footer{
        .navbar{
         padding: 30px 15px;
         background-color: transparent;
-        position: absolute;
         box-shadow:  $shadow-grey 0px 1px 10px;
+        margin-top: 0;
         .nav-link { font-size: 16px; }
+        &.landing-page {
+            margin-top: 0;
+        }
        } 
     }  
     .card-body { text-align: left; }
@@ -358,12 +367,12 @@ footer{
 }
     .contacts-page {
         .contacts-section {
-            margin: 150px 0;
+            margin: 70px 0;
             padding: 20px 50px;
         }
     }
     .project-page{
-        margin-top: 100px;
+        margin-top: 0;
         .project-item{
             align-items: center;
             .project-img{
@@ -381,7 +390,7 @@ footer{
     }
     //about page
     .about-page {
-        padding: 120px 80px;
+        padding: 70px 80px;
         &-title{ font-size: 36px;}
         &-subtitle{
             font-size: 18px;

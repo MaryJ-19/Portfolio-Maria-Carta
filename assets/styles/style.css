@@ -12068,6 +12068,11 @@ a {
   cursor: pointer;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
 header .circle {
   height: 1rem;
   width: 1rem;
@@ -12081,11 +12086,12 @@ header .header-title {
 }
 header .navbar {
   padding: 20px 5px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
   box-shadow: rgba(33, 37, 41, 0.2196078431) 0px 1px 10px;
+  margin-top: -70px;
+}
+header .navbar.landing-page {
+  margin-top: -70px;
+  background-color: #7ec5ff;
 }
 header .navbar .navbar-toggler-icon {
   z-index: 1;
@@ -12146,6 +12152,10 @@ header .landing-page .nav-link:hover {
   font-weight: 600;
 }
 
+.home-page {
+  position: relative;
+  margin-top: -40px;
+}
 .home-page .circle {
   height: 4.28rem;
   width: 4.28rem;
@@ -12277,8 +12287,8 @@ header .landing-page .nav-link:hover {
   background-size: cover;
 }
 .contacts-page .contacts-section {
-  margin: 104px 0;
-  padding: 0 20px;
+  margin: 70px 0 104px;
+  padding: 30px 20px;
 }
 .contacts-page .contacts-social {
   display: flex;
@@ -12289,6 +12299,8 @@ header .landing-page .nav-link:hover {
   background-color: rgba(245, 255, 250, 0.9019607843);
   border-radius: 50px;
   box-shadow: 3px 2px 14px rgba(33, 37, 41, 0.2196078431);
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .contacts-page .contacts-wrapper p {
   padding-left: 10px;
@@ -12334,7 +12346,7 @@ header .landing-page .nav-link:hover {
 }
 
 .about-page {
-  padding: 70px 40px;
+  padding: 110px 40px;
 }
 .about-page-title {
   font-size: 36px;
@@ -12401,8 +12413,7 @@ footer .go-up {
 
 @media (min-width: 768px) {
   header {
-    position: static;
-    background-color: #ffffff;
+    position: relative;
   }
   header .header-title {
     font-size: 1rem !important;
@@ -12411,11 +12422,14 @@ footer .go-up {
   header .navbar {
     padding: 30px 15px;
     background-color: transparent;
-    position: absolute;
     box-shadow: rgba(33, 37, 41, 0.2196078431) 0px 1px 10px;
+    margin-top: 0;
   }
   header .navbar .nav-link {
     font-size: 16px;
+  }
+  header .navbar.landing-page {
+    margin-top: 0;
   }
   .card-body {
     text-align: left;
@@ -12426,11 +12440,11 @@ footer .go-up {
     zoom: 85%;
   }
   .contacts-page .contacts-section {
-    margin: 150px 0;
+    margin: 70px 0;
     padding: 20px 50px;
   }
   .project-page {
-    margin-top: 100px;
+    margin-top: 0;
   }
   .project-page .project-item {
     align-items: center;
@@ -12454,7 +12468,7 @@ footer .go-up {
     transform-origin: 50px;
   }
   .about-page {
-    padding: 120px 80px;
+    padding: 70px 80px;
   }
   .about-page-title {
     font-size: 36px;
